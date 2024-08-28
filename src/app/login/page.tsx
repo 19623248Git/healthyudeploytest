@@ -89,7 +89,7 @@ const Login = () => {
       onClick={onLogin}>{buttonDisabled ? "No Login" : "Login"}</button>
       </div>
       <div className="flex items-center justify-center min-h-screen absolute top-[200px] left-1/2 transform -translate-x-1/2  font-['NotoSerif-SemiBold',_sans-serif] leading-none font-semibold">
-        <Link href="/signup">Don't have an account?</Link>
+        <Link href="/signup">Don&apos;t have an account?</Link>
       </div>
     </div>
   )
