@@ -70,10 +70,10 @@ export default function HomePage(){
         )
     })
 
-    let rs_ganesha: any = data_rs.ganesha.map((RS: any) => {
+    let rs_ganesha: any = data_rs.ganesha.map((RS: any, index) => {
         let lokasikampus = "Ganesha";
         return(
-            <RS_label 
+            <RS_label  key={index}
                 rumahSakit={RS.rumahSakit} 
                 specialis={RS.specialis} 
                 jarakKeKampusITB={RS.jarakKeKampusITB} 
@@ -83,10 +83,10 @@ export default function HomePage(){
         )
     })
 
-    let rs_cirebon: any = data_rs.cirebon.map((RS: any) => {
+    let rs_cirebon: any = data_rs.cirebon.map((RS: any, index) => {
         let lokasikampus = "Cirebon";
         return(
-            <RS_label 
+            <RS_label key={index}
                 rumahSakit={RS.rumahSakit} 
                 specialis={RS.specialis} 
                 jarakKeKampusITB={RS.jarakKeKampusITB} 
